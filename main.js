@@ -1,6 +1,6 @@
 console.log("Hi! Lets play Rock, Paper, Scissors!");
 
-const userInput = "paper";
+const userInput = document.getElementById('userInput').value;
 
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
@@ -68,3 +68,5 @@ const playGame = () => {
 };
 
 console.log(playGame());
+
+console.log(userInput());

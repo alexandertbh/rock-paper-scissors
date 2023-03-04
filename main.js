@@ -70,3 +70,11 @@ const playGame = () => {
 console.log(playGame());
 
 console.log(userInput());
+
+function userInput() {
+userInput = document.querySelector('#userInput').value;
+computerChoice = document.querySelector('#computerResponse');
+winner = document.querySelector('#winner');
+playGame();
+
+}

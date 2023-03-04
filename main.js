@@ -1,6 +1,17 @@
 console.log("Hi! Lets play Rock, Paper, Scissors!");
 
-const userInput = document.getElementById('userInput').value;
+
+function gameTime() {
+  let userInput = document.querySelector("#userInput").value;
+  let computerResponse = document.querySelector('#computerResponse');
+  let userResponse = document.querySelector("#userResponse");
+  let winner = document.querySelector('#winner');
+  userResponse.innerHTML = "User Input: " + userInput;
+  computerResponse.innerHTML='Computer Response: '+ getComputerChoice();
+  winner.innerHTML = 'The winner is:' + playGame();
+  
+  
+}
 
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();

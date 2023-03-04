@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
 </head>
 <body>
+    <style>
+        body {
+            text-align: center;
+            background-color: slategray;
+        }
+    </style>
     <h1>
         Welcome to Alex's Computer Generated Chess Game
     </h1>
     <div class="conatiner">
         <div class="input">
-            <input id="userInput"> <button id="enter" type="submit" onclick="userInput()">Enter</button>
+            <input id="userInput"> <button id="enter" type="submit" onclick="gameTime()">Enter</button>
         </div>
         <div class="responses">
-            <p class ="userResponse">
-                User Intpute:
+            <p id ="userResponse">
+                User Intput:
             </p>
             <p id ="computerResponse">
                 Computer Response:
